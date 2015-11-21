@@ -58,7 +58,7 @@ public class ChildAdapter extends BaseAdapter implements OnScrollListener {
             String[] temp = head_img.split("http://image.xiaolu.so/");
             if (temp.length > 1){
                 try {
-                    head_img = "http://image.xiaolu.so/" + URLEncoder.encode(temp[1],"utf-8") + "?imageMogr2/auto-orient/strip/size-limit/10k/q/85/thumbnail/600x700";
+                    head_img = "http://image.xiaolu.so/" + URLEncoder.encode(temp[1],"utf-8") + "?imageMogr2/format/jpg/size-limit/30k/thumbnail/600x800";
                 }catch (UnsupportedEncodingException e){
                     e.printStackTrace();
                 }
